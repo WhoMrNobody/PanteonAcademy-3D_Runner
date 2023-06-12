@@ -480,7 +480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.26596972, y: -0.13405937, z: 0.0373796, w: 0.95388204}
-  m_LocalPosition: {x: 2.79, y: 5.97, z: -107.07}
+  m_LocalPosition: {x: 2.79, y: 5.97, z: -104.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -500,9 +500,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTransform: {fileID: 1671584416}
-  _followSpeed: 10
-  _distance: {x: 0, y: 3.7, z: -6}
-  _lookTarget: {fileID: 2131967978}
+  _followSpeed: 2
+  _distance: {x: 1.4, y: 3.7, z: -6}
+  _lookTarget: {fileID: 1671584416}
 --- !u!1 &1671584415
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671584415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.53074646, y: 0.25, z: -98.61}
+  m_LocalPosition: {x: 0, y: 0.25, z: -98.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -549,6 +549,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runningSpeed: 6
+  _xSpeed: 1000
+  _limitX: 3.72
 --- !u!1 &2131967977
 GameObject:
   m_ObjectHideFlags: 0

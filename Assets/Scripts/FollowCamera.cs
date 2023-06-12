@@ -14,6 +14,10 @@ public class FollowCamera : MonoBehaviour
         
     }
 
+    void Update()
+    {
+       
+    }
     // Update is called once per frame
     void LateUpdate()
     {
