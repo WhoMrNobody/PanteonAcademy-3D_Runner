@@ -16,6 +16,13 @@ public class CheckCollisions : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Debug.Log("Yenildin!!!");
+        }
+    }
     public void AddScore(Collider coin)
     {
         _score++;
