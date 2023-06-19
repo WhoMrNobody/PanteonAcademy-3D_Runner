@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 949007939336409625}
   - component: {fileID: 7804654817629152488}
   m_Layer: 0
-  m_Name: speedboost
+  m_Name: Speedbooster
   m_TagString: SpeedBoost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
