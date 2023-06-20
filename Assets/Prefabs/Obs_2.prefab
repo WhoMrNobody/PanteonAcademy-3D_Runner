@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2045486291595646132}
+  - component: {fileID: 5031802273768595305}
   m_Layer: 0
   m_Name: Obs_2
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +31,24 @@ Transform:
   m_Children:
   - {fileID: 774855283050088152}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &5031802273768595305
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5551374646348104851}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.72, y: 0.135, z: 0.2}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1780029992856091177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91,10 +108,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9074265599538122292, guid: 57057c6def7e9e5458224a1ec0b34555, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1711291910879129139}
   m_SourcePrefab: {fileID: 100100000, guid: 57057c6def7e9e5458224a1ec0b34555, type: 3}
 --- !u!4 &774855283050088152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1329469119224052977, guid: 57057c6def7e9e5458224a1ec0b34555, type: 3}
   m_PrefabInstance: {fileID: 1780029992856091177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7304182895013147677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9074265599538122292, guid: 57057c6def7e9e5458224a1ec0b34555, type: 3}
+  m_PrefabInstance: {fileID: 1780029992856091177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1711291910879129139
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7304182895013147677}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1cfe5170452527e4783468b751eccbfe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

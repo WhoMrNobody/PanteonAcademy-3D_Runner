@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 259792983018776251}
+  - component: {fileID: 4051137255866652681}
   m_Layer: 0
   m_Name: Obs_3
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +31,24 @@ Transform:
   m_Children:
   - {fileID: 3001951618407739973}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &4051137255866652681
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2219906824783080536}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &851486531084644453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91,8 +108,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 678476351245867846, guid: 8791955e950d3024d89048d21f8033db, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8766736167808076747}
   m_SourcePrefab: {fileID: 100100000, guid: 8791955e950d3024d89048d21f8033db, type: 3}
+--- !u!1 &196883880124820259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 678476351245867846, guid: 8791955e950d3024d89048d21f8033db, type: 3}
+  m_PrefabInstance: {fileID: 851486531084644453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8766736167808076747
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196883880124820259}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9f549c202275bc4b959f3fc676c9a40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &3001951618407739973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2483741149740548640, guid: 8791955e950d3024d89048d21f8033db, type: 3}
