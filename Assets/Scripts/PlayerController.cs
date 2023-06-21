@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float _runningSpeed;
+    public float RunningSpeed;
     [SerializeField] float _xSpeed;
     [SerializeField] float _limitX;
+
+    public Animator PlayerAnimator;
     void Start()
     {
-        
+        PlayerAnimator = GetComponentInChildren<Animator>();
     }
 
-    
     void Update()
     {
        SwipeCheck();
@@ -36,7 +37,7 @@ public class PlayerController : MonoBehaviour
         _newX = transform.position.x + _xSpeed * _touchXDelta * Time.deltaTime;
         _newX = Mathf.Clamp(_newX, -_limitX, _limitX);
 
-        Vector3 newPos = new Vector3(_newX, transform.position.y, transform.position.z + _runningSpeed * Time.deltaTime);
+        Vector3 newPos = new Vector3(_newX, transform.position.y, transform.position.z + RunningSpeed * Time.deltaTime);
         transform.position = newPos;
     }
 }
